@@ -1,0 +1,23 @@
+name: Sync with Upstream
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天零点执行一次同步操作
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Fetch upstream
+      run: git fetch https://github.com/hehonghui/awesome-english-ebooks.git
+
+    - name: Merge upstream/main into local main
+      run: git merge FETCH_HEAD
+
+    - name: Push changes to fork
+      run: git push origin main
+      
