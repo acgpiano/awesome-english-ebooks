@@ -3,6 +3,7 @@ name: Sync with Upstream
 on:
   schedule:
     - cron: '0 0 * * *' # 每天零点执行一次同步操作
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -11,13 +12,25 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      with:
+        # Fetch all history for all branches and tags
+        fetch-depth: 0
 
-    - name: Fetch upstream
-      run: git fetch https://github.com/hehonghui/awesome-english-ebooks.git
+    - name: Set up Git
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
 
-    - name: Merge upstream/main into local main
-      run: git merge FETCH_HEAD
+    - name: Add upstream repository
+      run: git remote add upstream https://github.com/hehonghui/awesome-english-ebooks.git
+
+    - name: Fetch upstream changes
+      run: git fetch upstream
+
+    - name: Merge upstream changes
+      run: git merge upstream/main --allow-unrelated-histories
 
     - name: Push changes to fork
       run: git push origin main
-      
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
