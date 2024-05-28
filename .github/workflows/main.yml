@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        # Fetch all history for all branches and tags
+        fetch-depth: 0
+        
     - name: Set up Git
       run: |
         git config --global user.name 'github-actions'
