@@ -25,7 +25,7 @@ jobs:
       run: git remote add upstream https://github.com/hehonghui/awesome-english-ebooks.git
 
     - name: Merge upstream changes
-      run: git pull upstream master --rebase
+      run: git pull upstream master
 
     - name: Push changes to fork
       run: git push origin master
