@@ -3,7 +3,7 @@
 
 ## 一、英语阅读专用App推荐
 
-* <img align="center" src="https://ereader.link/images/ereader.png" width="32px" /> 英阅阅读器 - 超好用的英语阅读神器, <font color="#e3120b">让您轻松读懂英文小说、外刊杂志</font>,支持点击查词、句子翻译、mdict英汉-英英词典、阅读笔记、AI学英语等功能,[iOS版下载](https://apps.apple.com/cn/app/ereader-%E8%8B%B1%E9%98%85%E9%98%85%E8%AF%BB%E5%99%A8/id1558805880)、[Android版下载](https://www.coolapk.com/apk/283424);
+* <img align="center" src="https://ereader.link/images/ereader.png" width="32px" /> 英阅阅读器 - 超好用的英语阅读神器, <font color="#e3120b">让您轻松读懂英文小说、外刊杂志</font>,支持点击查词、句子翻译、mdict英汉-英英词典、阅读笔记、AI学英语等功能,[iOS版下载](https://apps.apple.com/cn/app/ereader-%E8%8B%B1%E9%98%85%E9%98%85%E8%AF%BB%E5%99%A8/id1558805880)、[Android版下载(华为、小米等应用商店均可下载)](https://ereader.link/);
 
 ---------------------
 
@@ -14,7 +14,6 @@
 
 * [经济学人 - 周刊, 点击这里下载最新一期](01_economist/te_2025.01.18) , 每周五十一点更新
 * [纽约客 - 周刊, 点击这里下载最新一期](02_new_yorker/2025.01.20) , 每周六上午更新
-* [卫报 - 每周两期](09_guardian/), 每周三、周日更新
 * [The Atlantic - 月刊](04_atlantic), 每月2号更新
 * [Wired - 月刊](05_wired), 每月2号更新
 
